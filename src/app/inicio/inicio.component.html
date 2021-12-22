@@ -1,0 +1,13 @@
+<div *ngFor="let prod of produtos">
+  <p>Nome: {{ prod.nome }}</p>
+  <img [src]="prod.imagem" />
+  <p>Preço: {{ prod.preco }}</p>
+  <p>
+    <input
+      type="button"
+      value="Adicionar ao carrinho"
+      (click)="adicionar(prod)" 
+    />
+
+  </p>
+</div>
